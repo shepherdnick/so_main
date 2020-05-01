@@ -4,7 +4,12 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    featuresList: ["Alarms", "Raise"]
+  },
+  getters: {
+    getFeatureList: state => state.featuresList
+  },
   mutations: {},
   actions: {},
   modules: {}
